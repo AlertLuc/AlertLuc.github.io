@@ -5,6 +5,25 @@
   
   <entry>
     <title>Website Recommendation</title>
+    <link href="/2022/11/17/logic/"/>
+    <url>/2022/11/17/logic/</url>
+    
+    <content type="html"><![CDATA[<h1 id="logic"><a href="#logic" class="headerlink" title="logic"></a>logic</h1><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-comment"># 替换</span><br>s.replace(<span class="hljs-string">&quot; &quot;</span>,<span class="hljs-string">&quot;%20&quot;</span>)<br></code></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">reversePrint</span>(<span class="hljs-params">self, head: ListNode</span>) -&gt; <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>]:<br>        <span class="hljs-comment"># 深度搜索遍历</span><br>        <span class="hljs-keyword">def</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params">head</span>):<br>            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> head:<br>                <span class="hljs-keyword">return</span> []<br>            <span class="hljs-keyword">return</span> dfs(head.<span class="hljs-built_in">next</span>) + [head.val]<br>        <span class="hljs-keyword">return</span> dfs(head)<br></code></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-comment">#斐波那契数列</span><br><span class="hljs-comment"># dp[n] = dp[n-1]+dp[n-2]</span><br><span class="hljs-comment"># range（0， 5） 是[0, 1, 2, 3, 4]没有5</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">numWays</span>(<span class="hljs-params">self, n: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        a, b = <span class="hljs-number">1</span>, <span class="hljs-number">1</span><br>        <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>            a, b = b, a + b<br>         <span class="hljs-comment"># 大数相加会溢出，题目里会要求对1000000007取模</span><br>        <span class="hljs-keyword">return</span> a % <span class="hljs-number">1000000007</span><br></code></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">fib</span>(<span class="hljs-params">self, n: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        a, b = <span class="hljs-number">0</span>, <span class="hljs-number">1</span><br>        <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>            a, b = b, a + b<br>        <span class="hljs-keyword">return</span> a % <span class="hljs-number">1000000007</span><br></code></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>Website Recommendation</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Website Recommendation</title>
     <link href="/2022/11/17/WebsiteRecommendation/"/>
     <url>/2022/11/17/WebsiteRecommendation/</url>
     
