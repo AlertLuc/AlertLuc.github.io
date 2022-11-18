@@ -16,15 +16,15 @@
   <meta name="author" content="Luc">
   <meta name="keywords" content="">
   
-    <meta name="description" content="logicPython12# 替换s.replace(&quot; &quot;,&quot;%20&quot;)  12345678class Solution:    def reversePrint(self, head: ListNode) -&gt; List[int]:        # 深度搜索遍历        def dfs(head):            if not he">
+    <meta name="description" content="logicPython替换排序12345678# 替换s.replace(&quot; &quot;,&quot;%20&quot;)# 排序# list 的 sort 方法返回的是对已经存在的列表进行操作，无返回值，而内建函数 sorted 方法返回的是一个新的 list，而不是在原来的基础上进行的操作# key 和 reverse 比一个等价的 cmp 函数处理速度要快# cmp(x,y) 函">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Logic">
 <meta property="og:url" content="http://alertluc.github.io/2022/11/17/logic/index.html">
 <meta property="og:site_name" content="AlertLuc Blog">
-<meta property="og:description" content="logicPython12# 替换s.replace(&quot; &quot;,&quot;%20&quot;)  12345678class Solution:    def reversePrint(self, head: ListNode) -&gt; List[int]:        # 深度搜索遍历        def dfs(head):            if not he">
+<meta property="og:description" content="logicPython替换排序12345678# 替换s.replace(&quot; &quot;,&quot;%20&quot;)# 排序# list 的 sort 方法返回的是对已经存在的列表进行操作，无返回值，而内建函数 sorted 方法返回的是一个新的 list，而不是在原来的基础上进行的操作# key 和 reverse 比一个等价的 cmp 函数处理速度要快# cmp(x,y) 函">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-11-17T08:36:20.102Z">
-<meta property="article:modified_time" content="2022-11-17T15:41:43.247Z">
+<meta property="article:modified_time" content="2022-11-18T11:34:34.134Z">
 <meta property="article:author" content="Luc">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -114,7 +114,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
-                Hejmpaĝo
+                Startseite
               </a>
             </li>
           
@@ -126,7 +126,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
-                Arkivoj
+                Archiv
               </a>
             </li>
           
@@ -138,7 +138,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
-                Kategorio
+                Kategorien
               </a>
             </li>
           
@@ -150,7 +150,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
-                Etikedoj
+                Schlagwörter
               </a>
             </li>
           
@@ -162,7 +162,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                Pri
+                Über
               </a>
             </li>
           
@@ -218,7 +218,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          496 vortoj
+          1.9k wörter
         
       </span>
     
@@ -229,7 +229,7 @@
         
         
         
-          5 minutoj
+          17 minuten
         
       </span>
     
@@ -272,15 +272,21 @@
             
               <div class="markdown-body">
                 
-                <h1 id="logic"><a href="#logic" class="headerlink" title="logic"></a>logic</h1><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-comment"># 替换</span><br>s.replace(<span class="hljs-string">&quot; &quot;</span>,<span class="hljs-string">&quot;%20&quot;</span>)<br></code></pre></td></tr></table></figure>
+                <h1 id="logic"><a href="#logic" class="headerlink" title="logic"></a>logic</h1><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><h3 id="替换排序"><a href="#替换排序" class="headerlink" title="替换排序"></a>替换排序</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-comment"># 替换</span><br>s.replace(<span class="hljs-string">&quot; &quot;</span>,<span class="hljs-string">&quot;%20&quot;</span>)<br><span class="hljs-comment"># 排序</span><br><span class="hljs-comment"># list 的 sort 方法返回的是对已经存在的列表进行操作，无返回值，而内建函数 sorted 方法返回的是一个新的 list，而不是在原来的基础上进行的操作</span><br><span class="hljs-comment"># key 和 reverse 比一个等价的 cmp 函数处理速度要快</span><br><span class="hljs-comment"># cmp(x,y) 函数用于比较2个对象，如果 x &lt; y 返回 -1, 如果 x == y 返回 0, 如果 x &gt; y 返回 1。</span><br>lst = <span class="hljs-built_in">sorted</span>(numbers)<br>        <span class="hljs-keyword">return</span> lst[<span class="hljs-number">0</span>]<br></code></pre></td></tr></table></figure>
 
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">reversePrint</span>(<span class="hljs-params">self, head: ListNode</span>) -&gt; <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>]:<br>        <span class="hljs-comment"># 深度搜索遍历</span><br>        <span class="hljs-keyword">def</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params">head</span>):<br>            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> head:<br>                <span class="hljs-keyword">return</span> []<br>            <span class="hljs-keyword">return</span> dfs(head.<span class="hljs-built_in">next</span>) + [head.val]<br>        <span class="hljs-keyword">return</span> dfs(head)<br></code></pre></td></tr></table></figure>
+<h3 id="列表遍历"><a href="#列表遍历" class="headerlink" title="列表遍历"></a>列表遍历</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#列表遍历</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">reversePrint</span>(<span class="hljs-params">self, head: ListNode</span>) -&gt; <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>]:<br>        <span class="hljs-comment"># 深度搜索遍历</span><br>        <span class="hljs-keyword">def</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params">head</span>):<br>            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> head:<br>                <span class="hljs-keyword">return</span> []<br>            <span class="hljs-keyword">return</span> dfs(head.<span class="hljs-built_in">next</span>) + [head.val]<br>        <span class="hljs-keyword">return</span> dfs(head)<br></code></pre></td></tr></table></figure>
 
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-comment">#斐波那契数列</span><br><span class="hljs-comment"># dp[n] = dp[n-1]+dp[n-2]</span><br><span class="hljs-comment"># range（0， 5） 是[0, 1, 2, 3, 4]没有5</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">numWays</span>(<span class="hljs-params">self, n: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        a, b = <span class="hljs-number">1</span>, <span class="hljs-number">1</span><br>        <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>            a, b = b, a + b<br>         <span class="hljs-comment"># 大数相加会溢出，题目里会要求对1000000007取模</span><br>        <span class="hljs-keyword">return</span> a % <span class="hljs-number">1000000007</span><br></code></pre></td></tr></table></figure>
+<h3 id="enumerate函数"><a href="#enumerate函数" class="headerlink" title="enumerate函数"></a>enumerate函数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>seasons = [<span class="hljs-string">&#x27;Spring&#x27;</span>, <span class="hljs-string">&#x27;Summer&#x27;</span>, <span class="hljs-string">&#x27;Fall&#x27;</span>, <span class="hljs-string">&#x27;Winter&#x27;</span>]<br><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">list</span>(<span class="hljs-built_in">enumerate</span>(seasons))<br>[(<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Spring&#x27;</span>), (<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;Summer&#x27;</span>), (<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;Fall&#x27;</span>), (<span class="hljs-number">3</span>, <span class="hljs-string">&#x27;Winter&#x27;</span>)]<br><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">list</span>(<span class="hljs-built_in">enumerate</span>(seasons, start=<span class="hljs-number">1</span>))       <span class="hljs-comment"># 下标从 1 开始</span><br>[(<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;Spring&#x27;</span>), (<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;Summer&#x27;</span>), (<span class="hljs-number">3</span>, <span class="hljs-string">&#x27;Fall&#x27;</span>), (<span class="hljs-number">4</span>, <span class="hljs-string">&#x27;Winter&#x27;</span>)]<br></code></pre></td></tr></table></figure>
 
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">fib</span>(<span class="hljs-params">self, n: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        a, b = <span class="hljs-number">0</span>, <span class="hljs-number">1</span><br>        <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>            a, b = b, a + b<br>        <span class="hljs-keyword">return</span> a % <span class="hljs-number">1000000007</span><br></code></pre></td></tr></table></figure>
+<h3 id="斐波那契数列"><a href="#斐波那契数列" class="headerlink" title="斐波那契数列"></a>斐波那契数列</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-comment">#斐波那契数列</span><br><span class="hljs-comment"># dp[n] = dp[n-1]+dp[n-2]</span><br><span class="hljs-comment"># range（0， 5） 是[0, 1, 2, 3, 4]没有5</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">numWays</span>(<span class="hljs-params">self, n: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        a, b = <span class="hljs-number">1</span>, <span class="hljs-number">1</span><br>        <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>            a, b = b, a + b<br>         <span class="hljs-comment"># 大数相加会溢出，题目里会要求对1000000007取模</span><br>        <span class="hljs-keyword">return</span> a % <span class="hljs-number">1000000007</span><br>    <br> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">fib</span>(<span class="hljs-params">self, n: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        a, b = <span class="hljs-number">0</span>, <span class="hljs-number">1</span><br>        <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>            a, b = b, a + b<br>        <span class="hljs-keyword">return</span> a % <span class="hljs-number">1000000007</span><br></code></pre></td></tr></table></figure>
 
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><br></code></pre></td></tr></table></figure>
+<h3 id="回文数"><a href="#回文数" class="headerlink" title="回文数"></a>回文数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 回文数</span><br><span class="hljs-comment"># 先定义一个列表，链表靠节点是否为空</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">isPalindrome</span>(<span class="hljs-params">self, head: ListNode</span>) -&gt; <span class="hljs-built_in">bool</span>:<br>        lst = []<br>        list_node = head<br>        <span class="hljs-keyword">while</span> list_node <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>:<br>            lst.append(list_node.val)<br>            list_node = list_node.<span class="hljs-built_in">next</span><br>        <span class="hljs-keyword">return</span> lst == lst[::-<span class="hljs-number">1</span>]<br><br><span class="hljs-comment"># 字符串</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">is_palindrome</span>(<span class="hljs-params">x: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">bool</span>:<br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">str</span>(x) == <span class="hljs-built_in">str</span>(x)[::-<span class="hljs-number">1</span>]<br></code></pre></td></tr></table></figure>
+
+<h3 id="高级函数"><a href="#高级函数" class="headerlink" title="高级函数"></a>高级函数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 高级函数</span><br><span class="hljs-keyword">return</span> [partial(mul, i) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">4</span>)]<br>cake_id[<span class="hljs-number">1</span>] <span class="hljs-keyword">for</span> cake_id <span class="hljs-keyword">in</span> cake_data[<span class="hljs-number">2</span>:]<br></code></pre></td></tr></table></figure>
+
+<h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 2  bin(int(x,8/10/16))</span><br><span class="hljs-comment"># 10 int(x,8/10/16)</span><br><span class="hljs-comment"># 8  oct(int(x,8/10/16))</span><br><span class="hljs-comment"># 16 hex(int(x,8/10/16))</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="参数解析器"><a href="#参数解析器" class="headerlink" title="参数解析器"></a>参数解析器</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 参数解析器</span><br><span class="hljs-keyword">import</span> argparse<br><span class="hljs-comment"># 2建立解析对象</span><br>parser = argparse.ArgumentParser(description=<span class="hljs-string">&#x27;SORT demo&#x27;</span>)<br><span class="hljs-comment"># 3添加属性</span><br>parser.add_argument(<span class="hljs-string">&#x27;--display&#x27;</span>, dest=<span class="hljs-string">&#x27;display&#x27;</span>, <span class="hljs-built_in">help</span>=<span class="hljs-string">&#x27;Display online tracker output (slow) [False]&#x27;</span>,action=<span class="hljs-string">&#x27;store_true&#x27;</span>)<br><span class="hljs-comment"># 4属性赋予实例args</span><br>args = parser.parse_args()<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(args.display))<br></code></pre></td></tr></table></figure>
 
 
                 
@@ -326,20 +332,20 @@
     <div class="license-meta">
       
         <div class="license-meta-item">
-          <div>Aŭtoro</div>
+          <div>Beitragsautor</div>
           <div>Luc</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
-          <div>Postigita</div>
+          <div>Veröffentlicht am</div>
           <div>November 17, 2022</div>
         </div>
       
       
       
         <div class="license-meta-item">
-          <div>Lizenta</div>
+          <div>Urheberrechtshinweis</div>
           <div>
             
               
@@ -371,7 +377,7 @@
                     
                       <a href="/2022/11/17/WebsiteRecommendation/" title="Website Recommendation">
                         <span class="hidden-mobile">Website Recommendation</span>
-                        <span class="visible-mobile">Sekva afiŝo</span>
+                        <span class="visible-mobile">Nächster</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
                     
@@ -390,7 +396,7 @@
       
   <aside class="sidebar" style="margin-left: -1rem">
     <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Enhavtabelo</p>
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Inhaltsverzeichnis</p>
   <div class="toc-body" id="toc-body"></div>
 </div>
 
@@ -445,7 +451,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Serĉi</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -453,7 +459,7 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">ŝlosivorto</label>
+          <label data-error="x" data-success="v" for="local-search-input">Stichwort</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -634,7 +640,7 @@
   
 
   <noscript>
-    <div class="noscript-warning">Blogo funkcias plej bone kun JavaScript ebligita</div>
+    <div class="noscript-warning">Blog funktioniert am besten mit aktiviertem JavaScript</div>
   </noscript>
 </body>
 </html>
